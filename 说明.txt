@@ -1,0 +1,11 @@
+说明：
+
+一：访问方式
+	http://××××××/admin.php?m=user&f=cid　　访问后台某个方法
+
+	http://××××××/index.php?m=user&f=index　　访问前台某个方法
+
+一：log
+	进入具体的函数则会记录相应的log
+
+	
