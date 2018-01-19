@@ -1136,3 +1136,259 @@ array (
   0 => '===============1513678042= =EXIT================================',
 )
 
+== index ==========
+array (
+  0 => 
+  array (
+    'code' => '20',
+    'message' => 'POST原始数据！',
+    'data' => 
+    array (
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  1 => 
+  array (
+    'code' => '20',
+    'message' => 'POST数据校验完成！',
+    'data' => 
+    array (
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  2 => 
+  array (
+    'code' => '20',
+    'message' => 'GET原始数据！',
+    'data' => 
+    array (
+      'm' => 'caip',
+      'f' => 'index',
+      'qihao' => '2017143',
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  3 => 
+  array (
+    'code' => '20',
+    'message' => 'GET数据校验完成！',
+    'data' => 
+    array (
+      'qihao' => '2017143',
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  4 => 
+  array (
+    'code' => '20',
+    'message' => '执行数据库连接...',
+    'data' => 'c_kobe',
+    'time' => '2017-12-19 18:35:42',
+  ),
+  5 => 
+  array (
+    'code' => '20',
+    'message' => '数据库连接成功！',
+    'data' => 'c_kobe',
+    'time' => '2017-12-19 18:35:42',
+  ),
+  6 => 
+  array (
+    'code' => '20',
+    'message' => '构建SQL语句成功！',
+    'data' => 
+    array (
+      'type' => 'SELECT',
+      'sql' => 'SELECT * FROM caipiao   WHERE status = \'1\'
+						 AND type = \'1\'
+						 AND qihao = \'2017143\' FOR UPDATE',
+      'parameters' => NULL,
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  7 => 
+  array (
+    'code' => '20',
+    'message' => '数据库执行成功！',
+    'data' => 
+    array (
+      0 => 
+      array (
+        'id' => 5,
+        'qihao' => 2017143,
+        'b_one' => '04',
+        'b_two' => '06',
+        'b_three' => '09',
+        'b_four' => '14',
+        'b_five' => '20',
+        'b_six' => '29',
+        'r_one' => '14',
+        'type' => 1,
+        'status' => 1,
+      ),
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  8 => 
+  array (
+    'code' => '20',
+    'message' => '操作成功！',
+    'data' => 
+    array (
+      5 => 
+      array (
+        'id' => 5,
+        'qihao' => 2017143,
+        'b_one' => '04',
+        'b_two' => '06',
+        'b_three' => '09',
+        'b_four' => '14',
+        'r_one' => '14',
+        'type' => 1,
+        'status' => 1,
+      ),
+    ),
+    'time' => '2017-12-19 18:35:42',
+  ),
+  9 => 
+  array (
+    'code' => '20',
+    'message' => '关闭数据库成功！',
+    'data' => '',
+    'time' => '2017-12-19 18:35:42',
+  ),
+)
+
+== index ==========
+array (
+  0 => '===============1513679742= =EXIT================================',
+)
+
+== index ==========
+array (
+  0 => 
+  array (
+    'code' => '20',
+    'message' => 'POST原始数据！',
+    'data' => 
+    array (
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  1 => 
+  array (
+    'code' => '20',
+    'message' => 'POST数据校验完成！',
+    'data' => 
+    array (
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  2 => 
+  array (
+    'code' => '20',
+    'message' => 'GET原始数据！',
+    'data' => 
+    array (
+      'm' => 'caip',
+      'f' => 'index',
+      'qihao' => '2017143',
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  3 => 
+  array (
+    'code' => '20',
+    'message' => 'GET数据校验完成！',
+    'data' => 
+    array (
+      'qihao' => '2017143',
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  4 => 
+  array (
+    'code' => '20',
+    'message' => '执行数据库连接...',
+    'data' => 'c_kobe',
+    'time' => '2017-12-19 18:39:07',
+  ),
+  5 => 
+  array (
+    'code' => '20',
+    'message' => '数据库连接成功！',
+    'data' => 'c_kobe',
+    'time' => '2017-12-19 18:39:07',
+  ),
+  6 => 
+  array (
+    'code' => '20',
+    'message' => '构建SQL语句成功！',
+    'data' => 
+    array (
+      'type' => 'SELECT',
+      'sql' => 'SELECT * FROM caipiao   WHERE status = \'1\'
+						 AND type = \'1\'
+						 AND qihao = \'2017143\' FOR UPDATE',
+      'parameters' => NULL,
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  7 => 
+  array (
+    'code' => '20',
+    'message' => '数据库执行成功！',
+    'data' => 
+    array (
+      0 => 
+      array (
+        'id' => 5,
+        'qihao' => 2017143,
+        'b_one' => '04',
+        'b_two' => '06',
+        'b_three' => '09',
+        'b_four' => '14',
+        'b_five' => '20',
+        'b_six' => '29',
+        'r_one' => '14',
+        'type' => 1,
+        'status' => 1,
+      ),
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  8 => 
+  array (
+    'code' => '20',
+    'message' => '操作成功！',
+    'data' => 
+    array (
+      5 => 
+      array (
+        'id' => 5,
+        'qihao' => 2017143,
+        'b_one' => '04',
+        'b_two' => '06',
+        'b_three' => '09',
+        'b_four' => '14',
+        'r_one' => '14',
+        'type' => 1,
+        'status' => 1,
+      ),
+    ),
+    'time' => '2017-12-19 18:39:07',
+  ),
+  9 => 
+  array (
+    'code' => '20',
+    'message' => '关闭数据库成功！',
+    'data' => '',
+    'time' => '2017-12-19 18:39:07',
+  ),
+)
+
+== index ==========
+array (
+  0 => '===============1513679947= =EXIT================================',
+)
+

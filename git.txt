@@ -1,0 +1,85 @@
+看法常用git命令
+	git clone **** 建仓库
+	cd 到仓库
+	git status  查看当前状态
+	git pull origin master （加入本地现在是master分支）
+	git checkout -b KF-660  基于master分支建一个本地KF-660
+	开发
+	git status
+	git checkout 文件名　　取消修改某文件
+	git log
+		* 98abc5a (HEAD, master) more stuff added to foo
+		* b7057a9 initial commit
+	现在让我们来重置回第一次提交的状态：
+	git reset --hard b7057a9  本地回滚到上次的某个版本号
+	git status  		回滚后,再次查看当前本地分支状态
+	git add .
+	git commit -m '增加'	提交
+	git pull origin KF-660  拉去远端最新的KF-660
+	git push origin KF-660　推到远端KF-660分支
+	git checkout develop	
+	git pull origin develop　拉去最新的develop分支
+	git merge KF-660	develop分支合KF-660的代码
+	git push origin develop  推到远端的develop分支
+	//推到正式
+	git checkout master
+	git pull origin master
+	git merge KF-660
+	git push origin master
+	git tag v1.1.5.35      打一个tag号
+	git push origin v1.1.5.35
+	//查找问题
+	git blame -L 183,+100 app/controllers/web/NewsController.php  查看某个文件第183行的改动记录，取100行记录
+	git log --pretty=oneline app/controllers/web/NewsController.php　　文件的所有的改动历史
+
+
+查看、添加、提交、删除、找回，重置修改文件
+	git help <command> # 显示command的help
+	git show # 显示某次提交的内容 git show $id
+	git co -- <file> # 抛弃工作区修改
+	git co . # 抛弃工作区修改
+	git add <file> # 将工作文件修改提交到本地暂存区
+	git add . # 将所有修改过的工作文件提交暂存区
+	git rm <file> # 从版本库中删除文件
+	git rm <file> --cached # 从版本库中删除文件，但不删除文件
+	git reset <file> # 从暂存区恢复到工作文件
+	git reset -- . # 从暂存区恢复到工作文件
+	git reset --hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改
+	git ci <file> git ci . git ci -a # 将git add, git rm和git ci等操作都合并在一起做　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　git ci -am "some comments"
+	git ci --amend # 修改最后一次提交记录
+	git revert <$id> # 恢复某次提交的状态，恢复动作本身也创建次提交对象
+	git revert HEAD # 恢复最后一次提交的状态
+
+查看文件diff
+	git diff <file> # 比较当前文件和暂存区文件差异 git diff
+	git diff <id1><id1><id2> # 比较两次提交之间的差异
+	git diff <branch1>..<branch2> # 在两个分支之间比较
+	git diff --staged # 比较暂存区和版本库差异
+	git diff --cached # 比较暂存区和版本库差异
+	git diff --stat # 仅仅比较统计信息
+
+查看提交记录
+	git log git log <file> # 查看该文件每次提交记录
+	git log -p <file> # 查看每次详细修改内容的diff
+	git log -p -2 # 查看最近两次详细修改内容的diff
+	git log --stat #查看提交统计信息
+
+一般配置
+	git --version   //查看git的版本信息
+	git config --global user.name   //获取当前登录的用户
+	git config --global user.email  //获取当前登录用户的邮箱
+	git config --global user.name 'userName'    //设置git账户，userName为你的git账号，
+	git config --global user.email 'email'
+
+比较的是历史区和工作区的差异（修改）
+	git diff master
+撤回内容
+(如果修改了工作区的文件后发现改错了，可以用暂存区或者版本库里的文件替换掉工作区的文件)
+用暂存区中的内容或者版本库中的内容覆盖掉工作区
+	git checkout index.html
+取消增加到暂存区的内容（添加时）
+	git reset HEAD index.html
+//显示目录的状体 有没有添加或者修改文件
+	git status
+
+
